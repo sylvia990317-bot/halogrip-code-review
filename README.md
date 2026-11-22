@@ -2,7 +2,7 @@
 
 HALOGRIP is a human-centred emergency steering concept that enables authorised first responders to reposition a stalled autonomous vehicle at low speed. It was developed by Sylvia Xie as a master's thesis at Chalmers University of Technology in collaboration with Autoliv.
 
-[View the live prototype](https://halogrip-code-review.vercel.app)
+[View the live prototype](https://sylviaxie.vercel.app/work/halogrip)
 
 ![HALOGRIP emergency steering concept](public/media/halogrip/other/hero.webp)
 

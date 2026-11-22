@@ -21,7 +21,7 @@ import SmoothScroll from "./smooth-scroll";
 const koulen = Koulen({ subsets: ["latin"], weight: ["400"], display: "swap", variable: "--halogrip-display" });
 const robotoMono = Roboto_Mono({ subsets: ["latin"], weight: ["400", "500", "700"], display: "swap", variable: "--halogrip-mono" });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://halogrip-code-review.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sylviaxie.vercel.app";
 const title = "HALOGRIP — Sylvia Xie";
 const description = "A human-centered emergency steering system for autonomous vehicles. A UX, HMI, and industrial design case study by Sylvia Xie.";
 
