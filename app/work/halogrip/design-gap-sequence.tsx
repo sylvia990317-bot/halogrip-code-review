@@ -14,14 +14,14 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { usePinCoordinator } from "./pin-provider";
 
-const FAR = encodeURI("/media/halogrip图片/2.4/far car.png");
-const CLOSE = encodeURI("/media/halogrip图片/2.4/close car.png");
-const IN_CAR = encodeURI("/media/halogrip图片/2.4/in car.png");
+const FAR = "/media/halogrip/2.4/robotaxi-far.png";
+const CLOSE = "/media/halogrip/2.4/robotaxi-close.png";
+const IN_CAR = "/media/halogrip/2.4/robotaxi-interior.png";
 
 const NODE_ICON = {
-  responder: encodeURI("/media/halogrip图片/2.4/first-responder-icon.png"),
-  control: encodeURI("/media/halogrip图片/2.4/local-control.png"),
-  reposition: encodeURI("/media/halogrip图片/2.4/safe-move.png"),
+  responder: "/media/halogrip/2.4/first-responder-icon.png",
+  control: "/media/halogrip/2.4/local-control.png",
+  reposition: "/media/halogrip/2.4/safe-move.png",
 } as const;
 
 type Panel = { id: string; index: string; title: string; sub: string; x: number; y: number; rotateY: number; icon: () => ReactNode };

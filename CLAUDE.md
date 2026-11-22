@@ -58,7 +58,7 @@ When changing motion code, remove all listeners, ticker callbacks, animation fra
 
 ## 3D model and media
 
-- HALOGRIP media lives under `public/media/halogrip图片`.
+- HALOGRIP media lives under `public/media/halogrip`.
 - The product model is `public/models/halogrip.glb`.
 - Scene code depends on the model's node names, pivots, and hierarchy. Do not flatten, join, rename, or instance its nodes without updating and testing all scene references.
 - Treat included assets as project-specific portfolio material; do not assume they are licensed for unrelated reuse.

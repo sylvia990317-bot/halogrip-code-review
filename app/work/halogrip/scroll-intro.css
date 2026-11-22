@@ -1,10 +1,9 @@
 /* Scroll-driven 3D intro for /work/halogrip.
    Route-scoped: imported only from app/work/halogrip/page.tsx, never from globals.css.
 
-   Everything here is measured off Sylvia's PowerPoint build of this animation
-   (design-source/halogrip-pitch-deck/Final Presention for claude12.pptx). The slide is 9144000 x 5143500 EMU,
-   so a point is 1/405 of the slide height: 88pt type is 21.72vh, a 10pt line is 2.47vh,
-   and every left/top/width/height below is the slide's own percentage.
+   Layout values preserve the proportions of the authored 16:9 product-reveal storyboard.
+   Positions and dimensions are viewport-relative percentages so the animation retains the
+   original composition across desktop sizes.
 
    Type is Poppins (--si-poppins, loaded route-locally by scroll-intro.tsx) — a deliberate,
    scoped exception to this page's Koulen (--display, see halogrip.css). Colour tokens come

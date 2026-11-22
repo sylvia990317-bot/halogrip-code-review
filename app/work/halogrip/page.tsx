@@ -21,15 +21,16 @@ import SmoothScroll from "./smooth-scroll";
 const koulen = Koulen({ subsets: ["latin"], weight: ["400"], display: "swap", variable: "--halogrip-display" });
 const robotoMono = Roboto_Mono({ subsets: ["latin"], weight: ["400", "500", "700"], display: "swap", variable: "--halogrip-mono" });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://halogrip-code-review.vercel.app";
 const title = "HALOGRIP — Sylvia Xie";
 const description = "A human-centered emergency steering system for autonomous vehicles. A UX, HMI, and industrial design case study by Sylvia Xie.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sylviaxie.vercel.app"),
+  metadataBase: new URL(siteUrl),
   title,
   description,
-  openGraph: { title, description, images: [{ url: encodeURI("/media/halogrip图片/other/hero.webp"), width: 2100, height: 1181, alt: "HALOGRIP emergency steering device" }] },
-  twitter: { card: "summary_large_image", title, description, images: [encodeURI("/media/halogrip图片/other/hero.webp")] },
+  openGraph: { title, description, images: [{ url: "/media/halogrip/other/hero.webp", width: 2100, height: 1181, alt: "HALOGRIP emergency steering device" }] },
+  twitter: { card: "summary_large_image", title, description, images: ["/media/halogrip/other/hero.webp"] },
 };
 
 const findings = [
@@ -56,7 +57,7 @@ const steps = [
 
 // Coordinates are fractions of product-front.webp's own 2100x1032 frame (0-1, labels can sit
 // slightly beyond 0-1 since they read just outside the image's own silhouette). Chosen by
-// sampling the image's alpha channel directly (see session notes) so each `point` lands on real
+// sampling the image's alpha channel directly so each `point` lands on real
 // opaque device geometry. Labels sit straight out from their point (up for 01/02, down for
 // 03/04) rather than tucked into the gaps inside the photo — reads as a callout pointing away
 // from the object, not text curling back into it — while staying close/short and pulled in from
@@ -106,7 +107,7 @@ export default function HalogripPage() {
           ))}
         </div>
         <figure className="product-intro-image">
-          <img src={encodeURI("/media/halogrip图片/other/untitled.226.png")} alt="Close-up of the HALOGRIP grip's authorization control and mounting detail" loading="lazy" />
+          <img src="/media/halogrip/other/authorization-control-detail.png" alt="Close-up of the HALOGRIP grip's authorization control and mounting detail" loading="lazy" />
         </figure>
       </section>
 
@@ -131,7 +132,7 @@ export default function HalogripPage() {
               <SectionReveal tag="p">Purpose-built robotaxis are beginning to move beyond the conventional driver&rsquo;s cockpit. Deployment, however, remains in transition as regulations and emergency systems adapt.</SectionReveal>
             </div>
             <figure className="cabin-figure">
-              <img src={encodeURI("/media/halogrip图片/2.1/robotaxi-cabin.png")} alt="Purpose-built robotaxi cabin without conventional driving controls" loading="lazy" />
+              <img src="/media/halogrip/2.1/robotaxi-cabin.png" alt="Purpose-built robotaxi cabin without conventional driving controls" loading="lazy" />
               <figcaption>
                 <div><span className="signal signal-plus">+</span><p>More flexible passenger space</p></div>
                 <div><span className="signal signal-minus">&minus;</span><p>Traditional controls removed</p></div>
@@ -153,7 +154,7 @@ export default function HalogripPage() {
             <SectionReveal tag="h2">LISTEN BEFORE DESIGNING.</SectionReveal>
             <SectionReveal tag="p" className="research-intro">Interviews with first responders and a public survey surfaced four recurring concerns about robotaxis.</SectionReveal>
             <figure className="research-photo">
-              <img src={encodeURI("/media/halogrip图片/03/firefighter-rescue.png")} alt="A firefighter rappels from an aerial ladder platform during a rescue operation" loading="lazy" />
+              <img src="/media/halogrip/03/firefighter-rescue.png" alt="A firefighter rappels from an aerial ladder platform during a rescue operation" loading="lazy" />
             </figure>
           </div>
 
@@ -228,7 +229,7 @@ export default function HalogripPage() {
               <span className="sketch-process-result-tag">Final &mdash; Selected direction</span>
               <p className="sketch-process-result-summary">B-pillar entry authorization + dashboard-mounted mechanical U-shape wheel + HUD</p>
               <figure>
-                <img src={encodeURI("/media/halogrip图片/05-iteration/sketch-5-final-pullout-wheel.jpg")} alt="Selected concept: dashboard-mounted U-shape pull-out wheel with HUD and separate B-pillar entry authorization" loading="lazy" />
+                <img src="/media/halogrip/05-iteration/sketch-5-final-pullout-wheel.jpg" alt="Selected concept: dashboard-mounted U-shape pull-out wheel with HUD and separate B-pillar entry authorization" loading="lazy" />
               </figure>
               <div className="sketch-process-qualities">
                 {[
@@ -259,13 +260,13 @@ export default function HalogripPage() {
         <div className="sketch-process-stage">
           <span className="sketch-process-stage-label">Grip refinement</span>
           <figure className="sketch-process-wide">
-            <img src={encodeURI("/media/halogrip图片/05-iteration/sketches.webp")} alt="Six rounds of grip-form iteration converging on the final selected shape" loading="lazy" />
+            <img src="/media/halogrip/05-iteration/sketches.webp" alt="Six rounds of grip-form iteration converging on the final selected shape" loading="lazy" />
           </figure>
         </div>
       </section>
 
       <section className="final-hero dark-section" id="solution">
-        <img className="final-background" src={encodeURI("/media/halogrip图片/other/cockpit.webp")} alt="Robotaxi cockpit interior with the HALOGRIP steering device embedded in the dashboard" loading="lazy" />
+        <img className="final-background" src="/media/halogrip/other/cockpit.webp" alt="Robotaxi cockpit interior with the HALOGRIP steering device embedded in the dashboard" loading="lazy" />
         <div className="final-scrim" />
         <div className="final-content shell">
           <span className="eyebrow">[ 07 / FINAL CONCEPT ]</span>
@@ -280,7 +281,7 @@ export default function HalogripPage() {
           <SectionReveal tag="h2">DESIGNED TO BE VISIBLE,<br />ACCESSIBLE AND<br />DELIBERATELY LIMITED.</SectionReveal>
         </div>
         <div className="product-visual">
-          <img src={encodeURI("/media/halogrip图片/other/product-front.webp")} alt="Front view of the HALOGRIP steering device showing its open, angular hand grips and illuminated controls" loading="lazy" />
+          <img src="/media/halogrip/other/product-front.webp" alt="Front view of the HALOGRIP steering device showing its open, angular hand grips and illuminated controls" loading="lazy" />
           <svg className="product-annotations" viewBox={`0 0 ${PRODUCT_IMG_W} ${PRODUCT_IMG_H}`} aria-hidden="true">
             {PRODUCT_ANNOTATIONS.map(({ id, point, lineEnd }) => (
               <g key={id}>
@@ -314,7 +315,7 @@ export default function HalogripPage() {
           <div className="story-grid">
             {steps.map(([title, description, file], index) => (
               <article key={title}>
-                <img src={encodeURI(`/media/halogrip图片/09-handover/${file}.png`)} alt={`${title}: ${description}`} loading="lazy" />
+                <img src={`/media/halogrip/09-handover/${file}.png`} alt={`${title}: ${description}`} loading="lazy" />
                 <div className="story-step">
                   <span>0{index + 1}</span>
                   <i aria-hidden="true" />
@@ -325,8 +326,8 @@ export default function HalogripPage() {
             ))}
           </div>
           <div className="system-detail">
-            <div className="access-detail"><span className="eyebrow">[ 07.3.1 / SECURE ACCESS ]</span><div className="access-images"><img src={encodeURI("/media/halogrip图片/other/id-one.webp")} alt="Responder identity verification interface" loading="lazy" /><img src={encodeURI("/media/halogrip图片/other/id-two.webp")} alt="Successful authorization screen for vehicle entry" loading="lazy" /></div><p>Two verification steps separate vehicle access from manual control.</p></div>
-            <div className="hud-detail"><span className="eyebrow">[ 07.3.2 / HEAD-UP DISPLAY ]</span><img src={encodeURI("/media/halogrip图片/other/hud.webp")} alt="Head-up display presenting manual control status and emergency driving guidance" loading="lazy" /><p>Only the information needed to maintain situational awareness during intervention.</p></div>
+            <div className="access-detail"><span className="eyebrow">[ 07.3.1 / SECURE ACCESS ]</span><div className="access-images"><img src="/media/halogrip/other/id-one.webp" alt="Responder identity verification interface" loading="lazy" /><img src="/media/halogrip/other/id-two.webp" alt="Successful authorization screen for vehicle entry" loading="lazy" /></div><p>Two verification steps separate vehicle access from manual control.</p></div>
+            <div className="hud-detail"><span className="eyebrow">[ 07.3.2 / HEAD-UP DISPLAY ]</span><img src="/media/halogrip/other/hud.webp" alt="Head-up display presenting manual control status and emergency driving guidance" loading="lazy" /><p>Only the information needed to maintain situational awareness during intervention.</p></div>
           </div>
         </div>
       </SectionReveal>

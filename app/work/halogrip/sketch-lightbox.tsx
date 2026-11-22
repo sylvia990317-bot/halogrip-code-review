@@ -27,7 +27,7 @@ const SKETCHES: Sketch[] = [
 ];
 const LAST = SKETCHES.length - 1;
 
-const srcFor = (s: Sketch) => encodeURI(`/media/halogrip图片/05-iteration/${s.file}.${s.ext}`);
+const srcFor = (s: Sketch) => `/media/halogrip/05-iteration/${s.file}.${s.ext}`;
 const altFor = (s: Sketch) => `Iteration sketch: ${s.title} — ${s.desc}`;
 
 export default function ConceptSketchLightbox() {

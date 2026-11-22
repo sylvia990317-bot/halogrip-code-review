@@ -1,6 +1,6 @@
 import gsap from "gsap";
 
-// Poses and timing follow the nine-slide deck in design-source/halogrip-pitch-deck/.
+// Poses and timing follow the nine-stage product reveal storyboard.
 /** Degrees plus a screen rectangle expressed as viewport fractions. */
 export type Pose = {
   pitch: number;

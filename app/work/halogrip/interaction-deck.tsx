@@ -27,7 +27,7 @@ export default function InteractionDeck() {
       <div className="interaction-demo" aria-live="polite">
         <div className="interaction-stage">
           <img
-            src={encodeURI("/media/halogrip图片/other/product-side.webp")}
+            src="/media/halogrip/other/product-side.webp"
             alt={active.description}
             style={{ transform: `rotate(${active.angle}deg)` }}
           />

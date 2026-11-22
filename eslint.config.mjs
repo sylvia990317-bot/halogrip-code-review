@@ -33,8 +33,7 @@ export default defineConfig([
     rules: { "react-hooks/refs": "off" },
   },
   globalIgnores([
-    ".next/**", "out/**", "next-env.d.ts", ".tmp/**", "scratch/**",
-    "design-source/**", "references/**", ".agents/**", ".claude/**",
+    ".next/**", "out/**", "next-env.d.ts",
     "public/**", "test-results/**", "playwright-report/**",
   ]),
 ]);

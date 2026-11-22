@@ -198,7 +198,7 @@ html.lenis{scroll-behavior:auto}
 .sketch-process-wide{margin:0;border:1px solid var(--line);background:var(--paper)}.sketch-process-wide img{display:block;width:100%;aspect-ratio:1.778;object-fit:contain}
 /* Concept-convergence layout: three columns — the four exploration sketches, a synthesis
    arrow, and the bordered "selected direction" result panel — ported from Sylvia's reference
-   mock (public/media/halogrip图片/06-sketch-process/reference.png). */
+   mock used during the design process. */
 .sketch-process-converge{display:grid;grid-template-columns:1.15fr auto 1fr;gap:clamp(20px,3vw,40px);align-items:start}
 .sketch-process-converge-concepts{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .sketch-process-concept-card{position:relative;margin:0;display:flex;flex-direction:column;border:1px solid var(--line);background:var(--paper);cursor:zoom-in;overflow:hidden;transition:transform .22s ease}

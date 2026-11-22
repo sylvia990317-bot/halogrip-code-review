@@ -30,7 +30,7 @@ import { usePinCoordinator } from "./pin-provider";
 
 /*
  * Redrawn 2026-10-05 against the photo itself (sampled on a 1672x941 grid over
- * `2.2 background.png`, which has exactly the poster's aspect). The old line kinked three times
+ * `emergency-route-background.png`, which has exactly the poster's aspect). The old line kinked three times
  * over a straight street with nothing in the photo to explain it, and ran *through* the frame.
  * Now it tells the scene's story: the response leaves the fire-station forecourt (truck nose at
  * ~240,560), runs along the street's centre line (y 530) and stops dead at the stalled robotaxi
@@ -147,7 +147,7 @@ export default function NeedScene() {
     <section ref={sectionRef} className="need-scene dark-section" aria-labelledby="challenge-need-title">
       <div
         className="need-bg"
-        style={{ backgroundImage: `url(${encodeURI("/media/halogrip图片/2.2/2.2 background.png")})` }}
+        style={{ backgroundImage: "url(/media/halogrip/2.2/emergency-route-background.png)" }}
       />
       <div className="need-scrim" />
       <div className="need-fade-top" />
