@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*
+
+test-results/
+playwright-report/
+tsconfig.tsbuildinfo
+dev-server.log
+dev-server-err.log
+
+.DS_Store
+*.bak
+*.zip
+~$*

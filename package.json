@@ -1,0 +1,40 @@
+{
+  "name": "halogrip-code-review",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone HALOGRIP frontend case study",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test tests/unit/*.test.cjs",
+    "lint": "eslint app next.config.ts --max-warnings 0",
+    "typecheck": "next typegen && tsc --noEmit --incremental false",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.8",
+    "@react-three/fiber": "^9.7.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "next": "16.4.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.6",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
+  }
+}
